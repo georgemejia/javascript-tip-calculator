@@ -68,7 +68,14 @@ body {
   display: block;
   border: none;
   border-radius: 15px;
+  font-size: 1rem;
   background-color: #f0f0f0;
+}
+
+.input-select {
+  font-size: 1rem;
+  border: none;
+  background-color: #fafafa;
 }
 
 .dashboard {
