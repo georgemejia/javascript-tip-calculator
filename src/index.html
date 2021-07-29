@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Tip Calculator App</title>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+  <h1 class="title">split</h1>
+  <div class="app">
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <div class="input-control">
+            <label for="input1" class="label">Bill</label>
+            <input type="text" class="input" id="input1" placeholder="$0">
+          </div>
+          <div class="input-control">
+            <label class="label" for="select">Select Tip %</label>
+            <select name="tip percentage" id="slect">
+              <option value="10">10%</option>
+              <option value="15">15%</option>
+              <option value="20">20%</option>
+              <option value="25">25%</option>
+              <option value="30">30%</option>
+            </select>
+          </div>
+          <div class="input-control">
+            <label for="input2" class="label">Number of People</label>
+            <input type="text" class="input" id="input2" placeholder="1">
+          </div>
+        </div>
+        <div class="column">
+          <div class="dashboard">
+            <div class="dashboard-section">
+              <div class="dashboard-amount">Tip Amount /<br><small class="text-small">Person</small></div>
+              <div class="dashboard-number" id="tip">$0.00</div>
+            </div>
+            <div class="dashboard-section">
+              <div class="dashboard-amount">Total Amount /<br><small class="text-small">Person</small></div>
+              <div class="dashboard-number" id="total">$0.00</div>
+            </div>
+            <button class="reset" id="reset">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
