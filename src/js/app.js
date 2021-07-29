@@ -9,22 +9,23 @@ tipPercent.addEventListener('click', (event) => {
   const billValue = billInput.value
   const tipValue = event.target.value
 
-  const bill = parseInt(billValue)
-  const percent = parseInt(tipValue)
+  if (billValue) {
+    const bill = parseFloat(billValue)
+    const percent = parseInt(tipValue)
 
-  const tip = bill * (percent / 100)
-  const total = bill + tip
+    const tip = bill * (percent / 100)
+    const total = bill + tip
 
-  tipElement.innerHTML = `$${tip.toFixed(2)}`
-  totalElement.innerHTML = `$${total.toFixed(2)}`
-
-  console.log(tip)
+    tipElement.innerHTML = `$${tip.toFixed(2)}`
+    totalElement.innerHTML = `$${total.toFixed(2)}`
+  }
 })
 
 billInput.addEventListener('keyup', (event) => {
   // get value from inputs
   const billValue = event.target.value
   const tipValue = tipPercent.value
+  
   if (billValue) {
     // turn bill value into an integer
     const bill = parseFloat(billValue)
