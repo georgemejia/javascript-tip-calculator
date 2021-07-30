@@ -5,7 +5,7 @@ const tipElement = document.querySelector('#tip')
 const totalElement = document.querySelector('#total')
 const reset = document.querySelector('#reset')
 
-tipPercent.addEventListener('click', (event) => {
+tipPercent.addEventListener('change', (event) => {
   const billValue = billInput.value
   const tipValue = event.target.value
 
