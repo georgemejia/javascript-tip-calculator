@@ -71,5 +71,7 @@ numberOfPeopleInput.addEventListener('keyup', (event) => {
 reset.addEventListener('click', () => {
   billInput.value = null
   numberOfPeopleInput.value = null
+  tipElement.innerHTML = '$0.00'
+  totalElement.innerHTML = '$0.00'
   tipPercent.value = 10
 })
